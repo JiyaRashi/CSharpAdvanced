@@ -54,12 +54,23 @@ namespace CSharpAdvanced
             //del1 = null;  //-----------------------------suppose if assgin null value to delegate its gives on run time error 
 
             del1(3, 3);
-           // del2(5, 5);
+            delegatevsEvents.calcDegatEvent += new DelegatevsEvents.calcDegateHandler(delegatevsEvents.Addevents);
+            //delegatevsEvents.calcDegatEvent += new DelegatevsEvents.calcDegateHandler(delegatevsEvents.sub);
+            //delegatevsEvents.calcDegatEvent += new DelegatevsEvents.calcDegateHandler(delegatevsEvents.multiplication);
+
+
+
+            // del2(5, 5);
 
 
             Console.ReadKey();
 
 
+        }
+
+        private static int DelegatevsEvents_calcDegatEvent(int x, int y)
+        {
+            throw new NotImplementedException();
         }
     }
 }

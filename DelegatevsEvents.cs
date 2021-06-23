@@ -10,7 +10,13 @@ namespace CSharpAdvanced
     {
         public delegate int CalcDegate(int x, int y);
 
-        public CalcDegate calcDegate;
+        public CalcDegate calcDegater;
+
+        public delegate int calcDegateHandler(int x, int y);
+
+
+        public event calcDegateHandler calcDegatEvent;
+
 
         public int Add(int x ,int y)
         {
@@ -30,6 +36,12 @@ namespace CSharpAdvanced
             Console.WriteLine($"-------------sub------{x - y}");
 
             return x - y;
+        }
+
+        public int Addevents(int x, int y)
+        {
+            Console.WriteLine($"-------------Add events------");
+            return 5;
         }
     }
 }
