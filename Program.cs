@@ -12,6 +12,7 @@ namespace CSharpAdvanced
         {
             Console.WriteLine("Hello world");
 
+            #region interface vs abstract
             PlantinumCustomer_abstract pc_abs = new PlantinumCustomer_abstract();
             pc_abs.discount();
 
@@ -29,7 +30,8 @@ namespace CSharpAdvanced
 
             SilverCustomer_Interface sc_interface = new SilverCustomer_Interface();
             sc_interface.discount();
-            sc_interface.name = "Silver";
+            sc_interface.name = "Silver"; 
+            #endregion
 
             Console.ReadKey();
 
