@@ -51,7 +51,7 @@ namespace CSharpAdvanced
             del1 += new CalcDegate(delegatevsEvents.sub);
 
             del1 += null;
-            //del1 = null;  //-----------------------------suppose if assgin value null to delegate its gives on run time error 
+            //del1 = null;  //-----------------------------suppose if assgin null value to delegate its gives on run time error 
 
             del1(3, 3);
            // del2(5, 5);
