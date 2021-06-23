@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DelegatevsEvents.cs" />
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="InterfacevsAbstract.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

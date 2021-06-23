@@ -61,16 +61,14 @@ namespace CSharpAdvanced
 
 
             // del2(5, 5);
-
+            int a = 56;
+             bool result=a.ISGreatJiya();
+            Console.WriteLine($"--------------------Extension method {result} ");
 
             Console.ReadKey();
 
 
         }
-
-        private static int DelegatevsEvents_calcDegatEvent(int x, int y)
-        {
-            throw new NotImplementedException();
-        }
+              
     }
 }
