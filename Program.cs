@@ -65,6 +65,29 @@ namespace CSharpAdvanced
              bool result=a.ISGreatJiya();
             Console.WriteLine($"--------------------Extension method {result} ");
 
+            #region Ref and Out keyword
+            OutKeyword outkey = new OutKeyword();
+            int num;
+            outkey.sum(out  num);
+            Console.WriteLine($" out---------------------{num}");
+
+            int xx;
+            int yy;
+            outkey.multipleNum(out xx, out yy);
+            Console.WriteLine($" out-------------X = {xx}  Y = {yy}-----");
+
+            int refx = 10;
+            int refy = 20;
+
+            outkey.multipleRef(ref refx, ref refy);
+            Console.WriteLine($" ref-------------X = {refx}  Y = {refy}-----");
+
+            int aa = 5;
+            int bb;
+            outkey.tricky(ref aa, out bb);
+            Console.WriteLine($" tricky-------------X = {aa}  Y = {bb}-----"); 
+            #endregion
+
             Console.ReadKey();
 
 
