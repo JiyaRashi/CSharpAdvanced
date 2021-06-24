@@ -47,6 +47,7 @@
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="InterfacevsAbstract.cs" />
     <Compile Include="OutKeyword.cs" />
+    <Compile Include="OverrideLoadHide.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
