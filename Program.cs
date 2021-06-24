@@ -12,8 +12,6 @@ namespace CSharpAdvanced
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
-
             #region interface vs abstract
             PlantinumCustomer_abstract pc_abs = new PlantinumCustomer_abstract();
             pc_abs.discount();
@@ -34,8 +32,7 @@ namespace CSharpAdvanced
             sc_interface.discount();
             sc_interface.name = "Silver";
             #endregion
-
-
+            #region Delegate Events
             DelegatevsEvents delegatevsEvents = new DelegatevsEvents();
 
             //int add= delegatevsEvents.Add(5, 6);
@@ -44,7 +41,7 @@ namespace CSharpAdvanced
             //Console.WriteLine($"Mul ----------------------> {mul}");
 
 
-            CalcDegate del1=new CalcDegate(delegatevsEvents.Add);
+            CalcDegate del1 = new CalcDegate(delegatevsEvents.Add);
             //CalcDegate del2 = new CalcDegate(delegatevsEvents.multiplication);
 
             del1 += new CalcDegate(delegatevsEvents.multiplication);
@@ -58,7 +55,7 @@ namespace CSharpAdvanced
             //delegatevsEvents.calcDegatEvent += new DelegatevsEvents.calcDegateHandler(delegatevsEvents.sub);
             //delegatevsEvents.calcDegatEvent += new DelegatevsEvents.calcDegateHandler(delegatevsEvents.multiplication);
 
-
+            #endregion
 
             // del2(5, 5);
             int a = 56;
@@ -122,10 +119,7 @@ namespace CSharpAdvanced
             ////Test3 tt3 = new Test2();
             //tt3.Method1();
             //tt3.Method2();
-
             Console.ReadKey();
-
-
         }
               
     }
