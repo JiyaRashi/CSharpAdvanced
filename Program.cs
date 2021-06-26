@@ -120,43 +120,47 @@ namespace CSharpAdvanced
             ////Test3 tt3 = new Test2();
             //tt3.Method1();
             //tt3.Method2();
-            ThreadTask asyncawait = new ThreadTask(3);
-            Console.WriteLine("------------------------------Start Main Thread---------------");
+            //ThreadTask asyncawait = new ThreadTask(3);
+            //Console.WriteLine("------------------------------Start Main Thread---------------");
 
-            Thread t1 = new Thread(asyncawait.Method1);
-            t1.Start();
-            t1.IsBackground = true;
+            //Thread t1 = new Thread(asyncawait.Method1);
+            //t1.Start();
+            //t1.IsBackground = true;
 
-            ParameterizedThreadStart pts = new ParameterizedThreadStart(asyncawait.Method2);
-            Thread t2 = new Thread(pts);
-            t2.Start();
+            //ParameterizedThreadStart pts = new ParameterizedThreadStart(asyncawait.Method2);
+            //Thread t2 = new Thread(pts);
+            //t2.Start();
 
-            //t2.Start("jiya");
+            ////t2.Start("jiya");
 
-            ThreadStart threadStart = new ThreadStart(asyncawait.Method3);
-            Thread t3 = new Thread(threadStart);
-            t3.Start();
-            Console.WriteLine("------------------------------End Main Thread---------------");
+            //ThreadStart threadStart = new ThreadStart(asyncawait.Method3);
+            //Thread t3 = new Thread(threadStart);
+            //t3.Start();
+            //Console.WriteLine("------------------------------End Main Thread---------------");
 
 
-            Task task1 = new Task(asyncawait.Method3);
-            task1.Start();
+            //Task task1 = new Task(asyncawait.Method3);
+            //task1.Start();
 
-            Task<int> taskretturn = new Task<int>(asyncawait.Method4);
-            taskretturn.Start();
-            Console.WriteLine($"--------taskretturn-----{taskretturn.Result}----------");
+            //Task<int> taskretturn = new Task<int>(asyncawait.Method4);
+            //taskretturn.Start();
+            //Console.WriteLine($"--------taskretturn-----{taskretturn.Result}----------");
 
-            Parallel.Invoke(() =>
-                {
-                    asyncawait.Method1();
-                },
-                () =>
-                {
-                    object aa = 9;
-                   asyncawait.Method2(aa);
-                }
+            //Parallel.Invoke(() =>
+            //    {
+            //        asyncawait.Method1();
+            //    },
+            //    () =>
+            //    {
+            //        object aa = 9;
+            //       asyncawait.Method2(aa);
+            //    }
 
-            );
+            //);
+            Video video = new Video();
+            VideoEncode videoEncode = new VideoEncode();
+            videoEncode.VideoEncoding(video);
+            videoEncode.OnEncoded();
             Console.ReadKey();
         }
               
