@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpAdvanced
 {
-   public static class ExtensionMethods
+   public static class ExtensionMethods_1
     {
         public static bool ISGreatJiya(this int num)
         {

@@ -44,10 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonUtility.cs" />
     <Compile Include="DelegateEvents_2.cs" />
+    <Compile Include="ExtensionMethods_2.cs" />
     <Compile Include="ThreadTask.cs" />
-    <Compile Include="DelegatevsEvents.cs" />
-    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="DelegatevsEvents_1.cs" />
+    <Compile Include="ExtensionMethods_1.cs" />
     <Compile Include="InterfacevsAbstract.cs" />
     <Compile Include="OutKeyword.cs" />
     <Compile Include="OverrideLoadHide.cs" />

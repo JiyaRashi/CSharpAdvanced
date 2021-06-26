@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpAdvanced
 {
-    public class DelegatevsEvents
+    public class DelegatevsEvents_1
     {
         public delegate int CalcDegate(int x, int y);
 
