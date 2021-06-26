@@ -158,11 +158,16 @@ namespace CSharpAdvanced
 
             //);
             Video video = new Video();
+            Services _service = new Services();
             VideoEncode videoEncode = new VideoEncode();
-            videoEncode.VideoEncoding(video);
-            videoEncode.OnEncoded();
+            videoEncode.VideoEncoding();
+            videoEncode.VideoEvent += _service.Mail;
+            videoEncode.VideoEvent += _service.SMS;
+
+            videoEncode.OnEncoded(video);
             Console.ReadKey();
         }
-              
+
+       
     }
 }
