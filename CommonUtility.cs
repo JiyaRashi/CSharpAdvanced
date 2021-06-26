@@ -179,8 +179,9 @@ namespace CSharpAdvanced
         public void ExtensionMethods_2()
         {
             Logger _logger = new Logger();
-            _logger.LoggerData("Print Value", "Info");
-
+            _logger.LogError("Thrown Error");
+            _logger.LogInfo("Print Value");
+            _logger.LogWarning("This not intened");
 
         }
     }
