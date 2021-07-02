@@ -175,7 +175,6 @@ namespace CSharpAdvanced
 
             );
         }
-
         public void ExtensionMethods_2()
         {
             Logger _logger = new Logger();
@@ -183,6 +182,11 @@ namespace CSharpAdvanced
             _logger.LogInfo("Print Value");
             _logger.LogWarning("This not intened");
 
+        }
+
+        public void VarDynamic()
+        {
+            VarDynamicKeyword.VarDynamic();
         }
     }
 }
