@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonUtility.cs" />
+    <Compile Include="Constandreadonly.cs" />
     <Compile Include="DelegateEvents_2.cs" />
     <Compile Include="ExtensionMethods_2.cs" />
     <Compile Include="ThreadTask.cs" />

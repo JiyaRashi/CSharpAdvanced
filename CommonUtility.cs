@@ -188,5 +188,12 @@ namespace CSharpAdvanced
         {
             VarDynamicKeyword.VarDynamic();
         }
+
+        public void ConstReadOnly()
+        {
+            //Constandreadonly cr = new Constandreadonly("Change my String");
+            Constandreadonly cr = new Constandreadonly();
+
+        }
     }
 }
