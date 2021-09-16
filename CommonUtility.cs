@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpAdvanced.Collection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -193,10 +194,16 @@ namespace CSharpAdvanced
         {
 
             //Constandreadonly cr = new Constandreadonly("Change my String");
-            Constandreadonly cr1= new Constandreadonly();
+            Constandreadonly cr1 = new Constandreadonly();
             Constandreadonly cr2 = new Constandreadonly();
             Constandreadonly cr3 = new Constandreadonly();
             //Static constrctor will be called once no matter how many object has been created
+        }
+
+        public void ArrayConcepts()
+        {
+            ArrayTheroyClass array = new ArrayTheroyClass();
+            array.ArrayPoint();
         }
     }
 }

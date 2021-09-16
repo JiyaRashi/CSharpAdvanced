@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collection\TheoryCollection\ArrayTheroyClass.cs" />
     <Compile Include="CommonUtility.cs" />
     <Compile Include="Concepts\Constandreadonly.cs" />
     <Compile Include="Concepts\DelegateEvents_2.cs" />
