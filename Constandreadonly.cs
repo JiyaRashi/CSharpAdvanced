@@ -41,7 +41,7 @@ namespace CSharpAdvanced
         }
         public Constandreadonly(string val)
         {
-           // Val = "dfdf";
+            //Val = "dfdf";
             s = "This string" + val;
             Console.WriteLine($"-------Ctor with Parameter------->{s}");
         }
