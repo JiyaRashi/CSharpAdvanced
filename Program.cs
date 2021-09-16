@@ -10,7 +10,7 @@ namespace CSharpAdvanced
 
            // _commonUtility.OverrideHiding();
 
-           _commonUtility.VarDynamic();
+           _commonUtility.ThreadTask();
 
             Console.Read();
 

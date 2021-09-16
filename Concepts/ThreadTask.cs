@@ -27,7 +27,7 @@ namespace CSharpAdvanced
         {
             int _target = Convert.ToInt32(target);
 
-            for (int i = 0; i < _number; i++)
+            for (int i = 0; i < _target; i++)
             {
                 Console.WriteLine($"-Method 2-{i}");
                 Thread.Sleep(200);
