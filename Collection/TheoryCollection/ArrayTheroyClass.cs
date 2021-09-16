@@ -30,6 +30,9 @@ namespace CSharpAdvanced.Collection
                 $"if there is a type mismatch.";
             string adv7= $"The performance of the application will be much better" +
                 $"because boxing and unboxing will not happen.";
+
+            string DisAdvantage = $"===============DisAdvantage================";
+
             Console.WriteLine(Note);
             Console.WriteLine(Note_1);
             Console.WriteLine(Advantage);
@@ -40,6 +43,25 @@ namespace CSharpAdvanced.Collection
             Console.WriteLine($"5.{adv5}");
             Console.WriteLine($"6.{adv6}");
             Console.WriteLine($"7.{adv7}");
+            
+            string disAdv1 = $"The array size is fixed. " +
+                 $"So, we should know in advance how many elements are going to be stored in the array." +
+                 $"Once the array is created, then we can never increase the size of an array. " +
+                 $"If you want then we can do it manually by " +
+                 $"creating a new array and copying the old array elements into the new array.";
+            string disAdv2 = $"As the array size is fixed, " +
+                $"if we allocate more memory than the requirement then the extra memory will be wasted. " +
+                $"On the other hand, if we allocate less memory than the requirement, " +
+                $"then it will create the problem.";
+            string disAdv3 = $"We can never insert an element into the middle of an array. " +
+                $"It is also not possible to delete or remove elements from the middle of an array";
+
+
+            Console.WriteLine(DisAdvantage);
+            Console.WriteLine($"1.{disAdv1}");
+            Console.WriteLine($"2.{disAdv2}");
+            Console.WriteLine($"3.{disAdv3}");
+
         }
     }
 }

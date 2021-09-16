@@ -2,6 +2,8 @@
 namespace CSharpAdvanced
 {
     using System;
+    using System.IO;
+
     class Program
     {
         static void Main(string[] args)
@@ -10,14 +12,12 @@ namespace CSharpAdvanced
 
            // _commonUtility.OverrideHiding();
 
-           _commonUtility.ArrayConcepts();
+           _commonUtility.TheoryConcepts();
 
             Console.Read();
 
-
-
         }
 
-       
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CSharpAdvanced.Collection;
+using CSharpAdvanced.Collection.TheoryCollection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -204,6 +205,12 @@ namespace CSharpAdvanced
         {
             ArrayTheroyClass array = new ArrayTheroyClass();
             array.ArrayPoint();
+        }
+
+        public void TheoryConcepts()
+        {
+            TheoryConcepts theoryConcepts = new TheoryConcepts();
+            theoryConcepts.ReadTheroy();
         }
     }
 }

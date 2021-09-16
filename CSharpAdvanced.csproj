@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collection\TheoryCollection\ArrayTheroyClass.cs" />
+    <Compile Include="Collection\TheoryCollection\TheoryConcepts.cs" />
     <Compile Include="CommonUtility.cs" />
     <Compile Include="Concepts\Constandreadonly.cs" />
     <Compile Include="Concepts\DelegateEvents_2.cs" />
@@ -61,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Collection\TheoryCollection\ConceptDefn.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
