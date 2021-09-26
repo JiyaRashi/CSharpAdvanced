@@ -15,7 +15,7 @@ namespace CSharpAdvanced.Collection.TheoryCollection
             //Console.BackgroundColor = ConsoleColor.White;
             using (StreamReader sr = 
                 new StreamReader(
-                    @"D:\DOT NET\Jiya\CSharpAdvanced\CSharpAdvanced\Collection\TheoryCollection\ConceptDefn.txt"))
+                    @"D:\DOT NET\Jiya\CSharpAdvanced\CSharpAdvanced\Collection\TheoryCollection\ConceptDefn.doc"))
             {
 
                 String line;

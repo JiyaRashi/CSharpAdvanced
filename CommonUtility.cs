@@ -1,5 +1,7 @@
 ﻿using CSharpAdvanced.Collection;
 using CSharpAdvanced.Collection.TheoryCollection;
+using CSharpAdvanced.Concepts;
+using CSharpAdvanced.DesignPattern;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -211,6 +213,52 @@ namespace CSharpAdvanced
         {
             TheoryConcepts theoryConcepts = new TheoryConcepts();
             theoryConcepts.ReadTheroy();
+        }
+
+        public void Liskov()
+        {
+            Apple apple = new Orange();
+            Console.WriteLine(apple.GetColor());
+
+            Fruit fruit = new Orange_o();
+            Console.WriteLine(fruit.GetColor());
+            fruit = new Apple_o();
+            Console.WriteLine(fruit.GetColor());
+        }
+
+        public void Factory_DesginPattern()
+        {
+            //string cardType = "Titanium"; //input 
+
+            ICreditCard cardDetails = FactoryClass.GetCreditCard("Titanium");
+            //cardDetails.GetCardType();
+            //cardDetails.GetAnnualCharge();
+            //cardDetails.GetCreditLimit();
+                        if (cardDetails != null)
+            {
+                Console.WriteLine("CardType : " + cardDetails.GetCardType());
+                Console.WriteLine("CreditLimit : " + cardDetails.GetCreditLimit());
+                Console.WriteLine("AnnualCharge :" + cardDetails.GetAnnualCharge());
+            }
+            else
+            {
+                Console.Write("Invalid Card Type");
+            }
+        }
+
+        public void Factory_Method_DesignPattern()
+        {
+            ICreditCard cardDetails = new TitaniumFactory().CreditCard();
+            if (cardDetails != null)
+            {
+                Console.WriteLine("CardType : " + cardDetails.GetCardType());
+                Console.WriteLine("CreditLimit : " + cardDetails.GetCreditLimit());
+                Console.WriteLine("AnnualCharge :" + cardDetails.GetAnnualCharge());
+            }
+            else
+            {
+                Console.Write("Invalid Card Type");
+            }
         }
     }
 }

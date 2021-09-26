@@ -1,0 +1,107 @@
+Advantages of Array in C#:
+1.It is used to represent similar types of multiple data items using a single name.
+2.We can use arrays to implement other data structures such as linked lists, trees, graphs, stacks, queues, etc.
+3.The two-dimensional arrays in C# are used to represent matrices.
+4.The Arrays in C# are strongly typed.
+That means they are used to store similar types of multiple data items using a single name. 
+As the arrays are strongly typed so we are getting two advantages.
+First, the performance of the application will be much better because boxing and unboxing will not happen. Secondly, runtime errors will be prevented because of a type mismatch. In this case, at compile time it will give you the error if there is a type mismatch.
+
+Disadvantages of using Arrays in C#:
+1.The array size is fixed. So, we should know in advance how many elements are going to be stored in the array. Once the array is created, then we can never increase the size of an array. If you want then we can do it manually by creating a new array and copying the old array elements into the new array.
+2.As the array size is fixed, if we allocate more memory than the requirement then the extra memory will be wasted. On the other hand, if we allocate less memory than the requirement, then it will create the problem.
+3.We can never insert an element into the middle of an array. It is also not possible to delete or remove elements from the middle of an array.
+
+Limitations of Array in C#:
+1.The array size is fixed. Once the array is created we can never increase the size of an array.
+2.If we want then we can do it manually by creating a new array and copy the old array elements into the new array or 
+by using the Array class Resize method which will do the same thing means to create a new array and copy the old array elements into the 
+new array and then destroy the old array.
+3.We can never insert an element into the middle of an array.
+4.Deleting or removing elements from the middle of the array.
+
+
+Collection in C#:
+1.Size can be increased dynamically.
+2.We can insert an element into the middle of a collection.
+3.It also provides the facility to remove or delete elements from the middle of a collection.
+
+What is ArrayList in C#?
+The ArrayList in C# is a collection class that works like an array but provides the facilities 
+such as dynamic resizing, adding, and deleting elements from the middle of a collection. 
+It implements the System.Collections.IList interface using an array whose size is dynamically 
+increased as required.
+
+What is the difference between an array and an Array List in C#?
+This is one of the frequently asked interview questions in C#. So let us discuss the difference between an array and ArrayList.
+
+Array:
+1.Fixed Length
+2.Cannot insert into the middle
+3.Cannot delete from middle
+ArrayList:
+1.Variable Length
+2.Can insert an element into the middle of the collection
+3.Can delete element from the middle of the collection
+
+Problems with Array and ArrayList Collection in C#:
+In the case of Array and ArrayList in C#, we can access the elements from the collection using a key. 
+That key is nothing but the index position of the elements which is starts from zero (0) to the number of elements – 1.
+But in reality, it’s very difficult to remember the index position of the element in order to access the values.
+
+What is a Hashtable in C#?
+The Hashtable in C# is a collection that stores the element in the form of “Key-Value Pairs”. 
+The data in the Hashtable are organized based on the hash code of the key. 
+The key in the HashTable is defined by us and more importantly, that key can be of any data type.
+Once we created the Hashtable collection, then we can access the elements by using the keys.
+The Hashtable class comes under the System.Collections namespace.
+
+Note:
+ArrayList collection class which can also be applied to other non-generic collection
+classes such as Stack, Queue, and Hashtable, etc.
+it proves the collection like ArrayList, Stack, Queue, Hashtable, 
+etc. can grow in size dynamically when we add items into the collection.
+
+Disadvantages of using non-generic collection in C#:
+ArrayList, Stack, Queue, Hashtable, etc operate on the object data type.
+Loosely typed means you can store any type of value into the collection.
+Because of this loosely typed nature, we may get runtime errors.
+Affects the performance of the application due to boxing and unboxing
+
+Problems with non-generic Collection Classes in C#:
+Non-generic collection classes are not type-safe as they operate on object data type
+so they can store any type of value.
+
+1.Array is type-safe
+2.Array List, HashTable, Stack, and Queue are not type-safe
+
+1.I cannot go with an array as arrays are fixed lengths. In this case, the length is unknown
+2.I can go with array list or hash table but if we go with array list or hash table then there is a chance of storing other types of values as they are not type-safe as they operate on the object data type
+So the solution is Generic collections in C#.
+
+Array: Type-safe but fixed length
+Collections: Auto Resizing but not type-safe
+Generic Collections: Typesafe and auto-resizing
+
+non-generic collection classes is that we get performance overhead. 
+The reason for this is boxing and unboxing. 
+As we already discussed these collection classes are worked on the object data type. 
+So if we are storing value type data into the collection,
+then those value type data are first converted into object type and then only store into the collection 
+which is nothing but performing boxing. Similarly, 
+if we want to retrieve the data from the collection, 
+then we need to convert the data from object type to value type means performing unboxing. 
+Due to this boxing and unboxing, we get poor performance if our collection is a big one.
+
+Generic Collections in C#
+introduced as part of C# 2.0 ou can consider this Generic collection as an extension to the non-generic collection
+
+Boxing means converting a value type to an object type and 
+Unboxing means converting object type back to the value type.
+
+Advantages of Generics in C#
+It Increases the reusability of the code.
+The Generics are type-safe. We will get the compile-time error if we try to use a different type of data rather than the one we specified in the definition.
+We get better performance with Generics as it removes the possibilities of boxing and unboxing.
+
+872M8-N7X79-Y26YG-263WQ-MDW92
