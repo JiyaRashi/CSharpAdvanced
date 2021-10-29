@@ -26,9 +26,10 @@ namespace CSharpAdvanced
             Console.WriteLine($"-------Ctor ------->{s}");
         }
 
+
         public void Method()
         {
-           // s = "This string";
+          // s = "This string";
         }
 
         static Constandreadonly()

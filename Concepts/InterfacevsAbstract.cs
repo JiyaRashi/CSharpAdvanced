@@ -10,8 +10,20 @@ namespace CSharpAdvanced
     {
         public abstract class customer
         {
+            public customer()
+            {
+                Console.WriteLine("Abs constructor");
+            }
 
+            public customer(string x)
+            {
+                Console.WriteLine("Abs constructor ---");
+            }
             public abstract void discount();
+            public void Add()
+            {
+                Console.WriteLine("added in Abs");
+            }
 
         }
 
@@ -34,9 +46,18 @@ namespace CSharpAdvanced
 
         public class PlantinumCustomer_abstract : customer
         {
+            public PlantinumCustomer_abstract():base("")
+            {
+                    
+            }
             public override void discount()
             {
                 Console.WriteLine("50 discount abs");
+            }
+
+            public new void Add()
+            {
+                Console.WriteLine("added in class");
             }
         }
 

@@ -10,10 +10,11 @@ namespace CSharpAdvanced
         {
             CommonUtility _commonUtility = new CommonUtility();
 
-            // _commonUtility.OverrideHiding();
+           // _commonUtility.InterfaceAbstract();
 
+            _commonUtility.Explicit_Interface();
             // _commonUtility.TheoryConcepts();
-            _commonUtility.Factory_Method_DesignPattern();
+           // _commonUtility.Factory_Method_DesignPattern();
             Console.Read();
 
         }

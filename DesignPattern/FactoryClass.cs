@@ -40,5 +40,12 @@ namespace CSharpAdvanced.DesignPattern
                 return this.MakeProduct();
             }
         }
+
+        public interface ICreditCard
+        {
+            string GetCardType();
+            int GetCreditLimit();
+            int GetAnnualCharge();
+        }
     }
 }

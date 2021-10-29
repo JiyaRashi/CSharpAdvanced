@@ -2,6 +2,9 @@
 using CSharpAdvanced.Collection.TheoryCollection;
 using CSharpAdvanced.Concepts;
 using CSharpAdvanced.DesignPattern;
+using CSharpAdvanced.DesignPattern.Behavioural;
+using CSharpAdvanced.DesignPattern.FactoryDesignPattern;
+using CSharpAdvanced.DesignPattern.Structural;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -226,39 +229,81 @@ namespace CSharpAdvanced
             Console.WriteLine(fruit.GetColor());
         }
 
-        public void Factory_DesginPattern()
-        {
-            //string cardType = "Titanium"; //input 
+        
 
-            ICreditCard cardDetails = FactoryClass.GetCreditCard("Titanium");
-            //cardDetails.GetCardType();
-            //cardDetails.GetAnnualCharge();
-            //cardDetails.GetCreditLimit();
-                        if (cardDetails != null)
-            {
-                Console.WriteLine("CardType : " + cardDetails.GetCardType());
-                Console.WriteLine("CreditLimit : " + cardDetails.GetCreditLimit());
-                Console.WriteLine("AnnualCharge :" + cardDetails.GetAnnualCharge());
-            }
-            else
-            {
-                Console.Write("Invalid Card Type");
-            }
+       
+        public void EnumerableEnumeratior_1()
+        {
+            EnumerableEnumerator ee = new EnumerableEnumerator();
+            ee.IterateCollection_1();
         }
 
-        public void Factory_Method_DesignPattern()
+        public void EnumerableEnumeratior_2()
         {
-            ICreditCard cardDetails = new TitaniumFactory().CreditCard();
-            if (cardDetails != null)
-            {
-                Console.WriteLine("CardType : " + cardDetails.GetCardType());
-                Console.WriteLine("CreditLimit : " + cardDetails.GetCreditLimit());
-                Console.WriteLine("AnnualCharge :" + cardDetails.GetAnnualCharge());
-            }
-            else
-            {
-                Console.Write("Invalid Card Type");
-            }
+            EnumerableEnumerator ee = new EnumerableEnumerator();
+            ee.IterateCollection_3();
+        }
+
+        public void Multi_Thread()
+        {
+            MultiThread multiThread = new MultiThread();
+            ThreadStart threadstart = new ThreadStart(multiThread.Method_1);
+            Thread t1 = new Thread(threadstart);
+            t1.Start();
+            Thread.Sleep(1000);
+            Thread t2 = new Thread(threadstart);
+            t2.Start();
+            Thread.Sleep(1000);
+            Thread t3 = new Thread(threadstart);
+            t3.Start();
+            Thread.Sleep(1000);
+            Thread t4 = new Thread(threadstart);
+            t4.Start();
+            Thread.Sleep(1000);
+
+            multiThread.Method_1();
+        }
+
+        public void Explicit_Interface()
+        {
+            ExplicitInterface ExplicitInterface = new ExplicitInterface();
+            ExplicitInterface.Explicit_Interface();
+        }
+
+        public void Factory_DesginPattern()
+        {
+            FactoryDesignPattern factoryDesignPattern = new FactoryDesignPattern();
+            factoryDesignPattern.FDPattern();
+        }
+
+        public void Abs_Factory_DesginPattern()
+        {
+            AbstractFactoryDesignPattern abstractFactoryDesignPattern = new AbstractFactoryDesignPattern();
+            abstractFactoryDesignPattern.AbsFactoryPattern();
+        }
+
+        public void Composite_DesignPattern()
+        {
+            Composite composite = new Composite();
+            composite.CompositePattern();
+        }
+
+        public void Facade_DesignPattern()
+        {
+            Facade facade = new Facade();
+            facade.GetFacade();
+        }
+
+        public void Decorator_DesignPattern()
+        {
+            Decorator decorator = new Decorator();
+            decorator.Decorator_Pattern();
+        }
+
+        public void Strategey_DesignPattern()
+        {
+            Strategey strategey = new Strategey();
+            strategey.Strategey_DesignPattern();
         }
     }
 }
