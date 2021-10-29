@@ -67,6 +67,7 @@
     <Compile Include="DesignPattern\Structural\Composite.cs" />
     <Compile Include="DesignPattern\Structural\Decorator.cs" />
     <Compile Include="DesignPattern\Structural\Facade.cs" />
+    <Compile Include="LogicalProgram\SecondLargestNum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Concepts\VarDynamicKeyword.cs" />

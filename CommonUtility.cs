@@ -5,6 +5,7 @@ using CSharpAdvanced.DesignPattern;
 using CSharpAdvanced.DesignPattern.Behavioural;
 using CSharpAdvanced.DesignPattern.FactoryDesignPattern;
 using CSharpAdvanced.DesignPattern.Structural;
+using CSharpAdvanced.LogicalProgram;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -304,6 +305,12 @@ namespace CSharpAdvanced
         {
             Strategey strategey = new Strategey();
             strategey.Strategey_DesignPattern();
+        }
+
+        public void SecondLargest()
+        {
+            SecondLargestNum secondLargestNum = new SecondLargestNum();
+            secondLargestNum.GetSendondLargest();
         }
     }
 }

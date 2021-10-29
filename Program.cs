@@ -12,7 +12,7 @@ namespace CSharpAdvanced
 
            // _commonUtility.InterfaceAbstract();
 
-            _commonUtility.Explicit_Interface();
+            _commonUtility.SecondLargest();
             // _commonUtility.TheoryConcepts();
            // _commonUtility.Factory_Method_DesignPattern();
             Console.Read();
