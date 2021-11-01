@@ -10,10 +10,12 @@ namespace CSharpAdvanced.LogicalProgram
     {
         public void GetSendondLargest()
         {
-            int[] arr = new int[] { 12, 13, 1, 10, 34,56,99, 1 };
+            int[] arr = new int[] { 12, 13, 19,56,1,123 };
 
             int arr_size = arr.Length;
             int i, first, second, third,fouth;
+            int max_Value = 0;
+
 
             // There should be atleast three elements
             if (arr_size < 3)
@@ -52,6 +54,18 @@ namespace CSharpAdvanced.LogicalProgram
             }
 
             Console.WriteLine("Three largest elements are " + first + " " + second + " " + third + " " +fouth);
+
+
+            for (int j = 0; j < arr_size -1; j++)
+            {
+                int val = arr[j] - arr[j + 1];
+                int posValue = (Math.Abs(val));
+                if (posValue > max_Value)
+                {
+                    max_Value = posValue;
+                }
+            }
+            Console.WriteLine("Three largest differentitate elements are " + max_Value );
 
             Console.ReadKey();
         }
