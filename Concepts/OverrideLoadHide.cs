@@ -8,7 +8,39 @@ namespace CSharpAdvanced
 {
     public class OverrideLoadHide
     {
-       
+        public void OverrideHiding()
+        {
+            #region Override Hiding
+            Test1 t1 = new Test1();
+            t1.Method1();
+            t1.Method2();
+            Console.WriteLine("-----------------------------------------------");
+
+            Test2 t2 = new Test2();
+            t2.Method1();
+            t2.Method2();
+            Console.WriteLine("-----------------------------------------------");
+
+
+            Test1 tt1 = new Test2();
+            tt1.Method1();
+            tt1.Method2();
+            tt1.Method3();
+            tt1.Method4();
+            Console.WriteLine("-----------------------------------------------");
+
+
+            Test3 t3 = new Test3();
+            t3.Method1();
+            t3.Method2();
+            Console.WriteLine("-----------------------------------------------");
+            Test1 ttt1 = new Test3();
+            ttt1.Method2();
+            Console.WriteLine("--------------------------------t4---------------");
+            Test1 t4 = new Test4();
+            t4.Method3();
+            #endregion
+        }
     }
 
     public class Test1

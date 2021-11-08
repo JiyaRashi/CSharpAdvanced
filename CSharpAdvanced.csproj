@@ -53,7 +53,6 @@
     <Compile Include="Concepts\ExplicitInterface.cs" />
     <Compile Include="Concepts\ExtensionMethods_2.cs" />
     <Compile Include="Concepts\LiskovOvercome.cs" />
-    <Compile Include="Concepts\LiskovProblem.cs" />
     <Compile Include="Concepts\MultiThread.cs" />
     <Compile Include="Concepts\ThreadTask.cs" />
     <Compile Include="Concepts\DelegatevsEvents_1.cs" />

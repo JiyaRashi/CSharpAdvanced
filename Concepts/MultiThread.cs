@@ -15,7 +15,25 @@ namespace CSharpAdvanced.Concepts
                 
         }
 
+        public void Multi_Thread()
+        {
+            MultiThread multiThread = new MultiThread();
+            ThreadStart threadstart = new ThreadStart(multiThread.Method_1);
+            Thread t1 = new Thread(threadstart);
+            t1.Start();
+            Thread.Sleep(1000);
+            Thread t2 = new Thread(threadstart);
+            t2.Start();
+            Thread.Sleep(1000);
+            Thread t3 = new Thread(threadstart);
+            t3.Start();
+            Thread.Sleep(1000);
+            Thread t4 = new Thread(threadstart);
+            t4.Start();
+            Thread.Sleep(1000);
 
+            multiThread.Method_1();
+        }
         public void Method_2()
         {
             lock (this)

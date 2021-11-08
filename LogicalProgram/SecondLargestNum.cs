@@ -8,6 +8,14 @@ namespace CSharpAdvanced.LogicalProgram
 {
    public class SecondLargestNum
     {
+        static SecondLargestNum()
+        {
+
+        }
+        public SecondLargestNum(string s)
+        {
+                
+        }
         public void GetSendondLargest()
         {
             int[] arr = new int[] { 12, 13, 19,56,1,123 };
@@ -67,6 +75,22 @@ namespace CSharpAdvanced.LogicalProgram
             }
             Console.WriteLine("Three largest differentitate elements are " + max_Value );
 
+            int firstNum = 0;
+            int secondNum = 1;
+            int NextNum;
+
+            //Console.WriteLine(firstNum);
+            //Console.WriteLine(secondNum);
+
+
+            for (int n = 2; n < 20; n++)
+            {
+                NextNum = firstNum + secondNum;
+                Console.WriteLine(NextNum);
+                secondNum = firstNum;
+                firstNum = NextNum;
+
+            }
             Console.ReadKey();
         }
     }
