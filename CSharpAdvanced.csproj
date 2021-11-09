@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,6 +14,8 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,8 +37,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,7 +58,7 @@
   <ItemGroup>
     <Compile Include="Collection\TheoryCollection\ArrayTheroyClass.cs" />
     <Compile Include="Collection\TheoryCollection\TheoryConcepts.cs" />
-    <Compile Include="CommonUtility.cs" />
+    <Compile Include="CSharp_Utility.cs" />
     <Compile Include="Concepts\Constandreadonly.cs" />
     <Compile Include="Concepts\DelegateEvents_2.cs" />
     <Compile Include="Concepts\EnumerableEnumerator.cs" />
@@ -66,6 +78,43 @@
     <Compile Include="DesignPattern\Structural\Composite.cs" />
     <Compile Include="DesignPattern\Structural\Decorator.cs" />
     <Compile Include="DesignPattern\Structural\Facade.cs" />
+    <Compile Include="EF_Utility.cs" />
+    <Compile Include="Entity-Framework\Course.cs">
+      <DependentUpon>EF_Demo_Moel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity-Framework\EF_Demo_Moel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EF_Demo_Moel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity-Framework\EF_Demo_Moel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EF_Demo_Moel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity-Framework\EF_Demo_Moel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EF_Demo_Moel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity-Framework\spGetCoursesByStudentId_Result.cs">
+      <DependentUpon>EF_Demo_Moel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity-Framework\Standard.cs">
+      <DependentUpon>EF_Demo_Moel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity-Framework\Student.cs">
+      <DependentUpon>EF_Demo_Moel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity-Framework\StudentAddress.cs">
+      <DependentUpon>EF_Demo_Moel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity-Framework\Teacher.cs">
+      <DependentUpon>EF_Demo_Moel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity-Framework\vwStudentCourse.cs">
+      <DependentUpon>EF_Demo_Moel.tt</DependentUpon>
+    </Compile>
     <Compile Include="LogicalProgram\SecondLargestNum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,9 +122,40 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="Entity-Framework\EF_Demo_Moel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EF_Demo_Moel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entity-Framework\EF_Demo_Moel.edmx.diagram">
+      <DependentUpon>EF_Demo_Moel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Collection\TheoryCollection\ConceptDefn.doc" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entity-Framework\EF_Demo_Moel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EF_Demo_Moel.Context.cs</LastGenOutput>
+      <DependentUpon>EF_Demo_Moel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entity-Framework\EF_Demo_Moel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EF_Demo_Moel.edmx</DependentUpon>
+      <LastGenOutput>EF_Demo_Moel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>

@@ -17,7 +17,7 @@ using static CSharpAdvanced.InterfacevsAbstract;
 
 namespace CSharpAdvanced
 {
-    public class CommonUtility
+    public class CSharp_Utility
     {
         public void InterfaceAbstract()
         {

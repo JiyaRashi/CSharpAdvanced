@@ -8,13 +8,16 @@ namespace CSharpAdvanced
     {
         static void Main(string[] args)
         {
-            CommonUtility _commonUtility = new CommonUtility();
+            CSharp_Utility _commonUtility = new CSharp_Utility();
 
+            EF_Utility eF_Utility = new EF_Utility();
+
+            eF_Utility.GetAllStudents();
            // _commonUtility.InterfaceAbstract();
 
-            _commonUtility.SecondLargest();
+            // _commonUtility.SecondLargest();
             // _commonUtility.TheoryConcepts();
-           // _commonUtility.Factory_Method_DesignPattern();
+            // _commonUtility.Factory_Method_DesignPattern();
             Console.Read();
 
         }
