@@ -15,6 +15,11 @@ namespace CSharpAdvanced
                 Console.WriteLine("Abs constructor");
             }
 
+            static customer()
+            {
+                Console.WriteLine("static abs constructor");
+            }
+
             public customer(string x)
             {
                 Console.WriteLine("Abs constructor ---");

@@ -12,8 +12,11 @@ namespace CSharpAdvanced
 
             EF_Utility eF_Utility = new EF_Utility();
 
-            eF_Utility.GetAllStudents();
+            //_commonUtility.InterfaceAbstract();
            // _commonUtility.InterfaceAbstract();
+
+            eF_Utility.GetAllStudents();
+            // _commonUtility.InterfaceAbstract();
 
             // _commonUtility.SecondLargest();
             // _commonUtility.TheoryConcepts();
