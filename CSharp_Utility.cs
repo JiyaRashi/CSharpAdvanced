@@ -53,11 +53,11 @@ namespace CSharpAdvanced
             //Console.WriteLine($"Mul ----------------------> {mul}");
 
 
-            CalcDegate del1 = new CalcDegate(delegatevsEvents.Add);
+            CalcDegate del1 = delegatevsEvents.Add;
             //CalcDegate del2 = new CalcDegate(delegatevsEvents.multiplication);
 
-            del1 += new CalcDegate(delegatevsEvents.multiplication);
-            del1 += new CalcDegate(delegatevsEvents.sub);
+            del1 += delegatevsEvents.multiplication;
+            del1 += delegatevsEvents.sub;
 
             del1 += null;
             //del1 = null;  //-----------------------------suppose if assgin null value to delegate its gives on run time error 

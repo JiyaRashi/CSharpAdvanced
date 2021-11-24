@@ -10,16 +10,17 @@ namespace CSharpAdvanced
 {
     public class EF_Utility
     {
+        Student addStudent = new Student()
+        {
+            StudentId = 6,
+            StandardId = 1,
+            FirstName = "Jiya",
+            LastName = "Rashee",
+
+        };
         public void GetAllStudents()
         {
-            var addStudent = new Student()
-            {
-                StudentId = 5,
-                StandardId=1,
-                FirstName="Jiya",
-                LastName="Rashi",
-
-            };
+            
             using(var context= new EF_Demo_DBEntities())
             {
 
@@ -40,6 +41,15 @@ namespace CSharpAdvanced
 
                 }
 
+            }
+        }
+
+        public void UpdatedStudents()
+        {
+            using (var context = new EF_Demo_DBEntities())
+            {
+                context.spUpdateStudent(addStudent.StudentId, addStudent.StandardId, addStudent.FirstName, addStudent.LastName);
+                context.SaveChanges();
             }
         }
     }

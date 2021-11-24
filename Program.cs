@@ -10,12 +10,13 @@ namespace CSharpAdvanced
         {
             CSharp_Utility _commonUtility = new CSharp_Utility();
 
+            _commonUtility.DelegateEvent_1();
             EF_Utility eF_Utility = new EF_Utility();
 
             //_commonUtility.InterfaceAbstract();
            // _commonUtility.InterfaceAbstract();
 
-            eF_Utility.GetAllStudents();
+           // eF_Utility.UpdatedStudents();
             // _commonUtility.InterfaceAbstract();
 
             // _commonUtility.SecondLargest();
