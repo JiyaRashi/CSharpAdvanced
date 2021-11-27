@@ -10,7 +10,7 @@ namespace CSharpAdvanced
         {
             CSharp_Utility _commonUtility = new CSharp_Utility();
 
-            _commonUtility.DelegateEvent_1();
+            _commonUtility.stringvsStringBuilder();
             EF_Utility eF_Utility = new EF_Utility();
 
             //_commonUtility.InterfaceAbstract();

@@ -9,7 +9,6 @@ namespace CSharpAdvanced.Concepts
 {
     public class MultiThread
     {
-        Mutex mutex = new Mutex();
         public MultiThread()
         {
                 
@@ -18,7 +17,7 @@ namespace CSharpAdvanced.Concepts
         public void Multi_Thread()
         {
             MultiThread multiThread = new MultiThread();
-            ThreadStart threadstart = new ThreadStart(multiThread.Method_1);
+            ThreadStart threadstart = new ThreadStart(multiThread.Method_2);
             Thread t1 = new Thread(threadstart);
             t1.Start();
             Thread.Sleep(1000);
@@ -32,7 +31,7 @@ namespace CSharpAdvanced.Concepts
             t4.Start();
             Thread.Sleep(1000);
 
-            multiThread.Method_1();
+         //   multiThread.Method_3();
         }
         public void Method_2()
         {
@@ -44,9 +43,18 @@ namespace CSharpAdvanced.Concepts
             }
         }
 
+
+        public void Method_3()
+        {
+            
+                Console.Write("[Welcome to the ");
+                Thread.Sleep(1000);
+                Console.WriteLine("world of dotnet!]");
+        }
         public void Method_1()
         {
-                 mutex.WaitOne();
+            Mutex mutex = new Mutex();
+            mutex.WaitOne();
                 Console.Write("[Welcome to the ");
                 Thread.Sleep(1000);
                 Console.WriteLine("world of dotnet!]");

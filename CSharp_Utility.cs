@@ -210,7 +210,13 @@ namespace CSharpAdvanced
         public void SecondLargest()
         {
             SecondLargestNum secondLargestNum = new SecondLargestNum("");
-            secondLargestNum.GetSendondLargest();
+            secondLargestNum.CountWords();
+        }
+
+        public void stringvsStringBuilder()
+        {
+            StringvsStringBuilder stringvsStringBuilder = new StringvsStringBuilder();
+            stringvsStringBuilder.stringvsstringbuilder();
         }
     }
 }

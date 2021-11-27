@@ -93,6 +93,28 @@ namespace CSharpAdvanced.LogicalProgram
             }
             Console.ReadKey();
         }
+
+        public void CountWords()
+        {
+            int counter = 0;
+            string str= "I am";
+            string str2 = "str2" + "str-";
+
+            char[] s = str.ToCharArray();
+
+            foreach (var item in s)
+            {
+                if (!item.Equals(' ')) 
+                {
+                    counter++;
+                }
+            }
+
+            Console.WriteLine($" Letter counter value {counter}");
+
+            Console.WriteLine($" str2 {str2}");
+
+        }
     }
 
    

@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Collection\TheoryCollection\ArrayTheroyClass.cs" />
     <Compile Include="Collection\TheoryCollection\TheoryConcepts.cs" />
+    <Compile Include="Concepts\StringvsStringBuilder.cs" />
     <Compile Include="CSharp_Utility.cs" />
     <Compile Include="Concepts\Constandreadonly.cs" />
     <Compile Include="Concepts\DelegateEvents_2.cs" />
