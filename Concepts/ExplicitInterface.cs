@@ -27,7 +27,7 @@ namespace CSharpAdvanced.Concepts
             i1.Display();
             i2.Display();
 
-            Console.WriteLine($" Type Casting Method");
+            Console.WriteLine($" =====Type Casting Method=====");
 
             ((I1)Interface_Check).Display();
             ((I2)Interface_Check).Display();
