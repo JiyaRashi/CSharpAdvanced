@@ -10,8 +10,8 @@ namespace CSharpAdvanced
         {
             CSharp_Utility _commonUtility = new CSharp_Utility();
 
-            _commonUtility.stringvsStringBuilder();
-            EF_Utility eF_Utility = new EF_Utility();
+            _commonUtility.ExtensionMethods_1();
+           // EF_Utility eF_Utility = new EF_Utility();
 
             //_commonUtility.InterfaceAbstract();
            // _commonUtility.InterfaceAbstract();

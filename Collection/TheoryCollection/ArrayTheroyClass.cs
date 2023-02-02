@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharpAdvanced.Collection
+﻿namespace CSharpAdvanced.Collection
 {
-   public class ArrayTheroyClass
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    public class ArrayTheroyClass
     {
         public void ArrayPoint()
         {

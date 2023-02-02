@@ -61,7 +61,7 @@ namespace CSharpAdvanced.LogicalProgram
                     fouth = arr[i];
             }
 
-            Console.WriteLine("Three largest elements are " + first + " " + second + " " + third + " " +fouth);
+            Console.WriteLine("Three largest elements are " + first + " " + second + " " + third + " " + fouth);
 
 
             for (int j = 0; j < arr_size -1; j++)

@@ -13,7 +13,6 @@ namespace CSharpAdvanced.Concepts
         public void stringvsstringbuilder()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            string str1;
             string str2 = " I am ";
             string str3 = "string class";
             string str4 = " I am ";

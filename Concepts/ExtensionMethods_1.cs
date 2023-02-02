@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharpAdvanced
+﻿namespace CSharpAdvanced
 {
-   public static class ExtensionEx    {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    public static class ExtensionEx
+    {
         public static bool ISGreatJiya(this int num)
         {
             return num < 100 ? false : true;
