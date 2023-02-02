@@ -83,6 +83,11 @@ namespace CSharpAdvanced
         {
             int a = 56;
             bool result = a.ISGreatJiya();
+
+            Ex1 ex1 = new Ex1();
+            ex1.GetworodCount();
+           // ExtensionEx.GetExclassfunc();--->Wrong
+
             Console.WriteLine($"--------------------Extension method {result} ");
         }
         public void RefvsOut()
