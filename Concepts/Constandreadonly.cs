@@ -10,7 +10,7 @@ namespace CSharpAdvanced
     {
         const int c = 100;// need to provide value at time declartion 
         //c =150;
-        readonly string s;
+        readonly string _oldVal;
 
         readonly static string Val;
         readonly static string Val1;
@@ -18,12 +18,16 @@ namespace CSharpAdvanced
         // s="This string";
         public Constandreadonly()
         {
-           // Val = "Hey static readonly";
+            Console.WriteLine($"======Constandreadonly ========");
+
+            // Val = "Hey static readonly";
             //c = 123;
-            string v = "changed ";
-            s="This string";
-            s = v;
-            Console.WriteLine($"-------Ctor ------->{s}");
+            string _newVal = "New Value ";
+            _oldVal= "Old Value";
+            _oldVal = _newVal;
+            Console.WriteLine($"-------Assigned Value :_oldVal = _newVal-----");
+            Console.WriteLine($"------_oldVal: {_oldVal}");
+
         }
 
 
@@ -43,8 +47,8 @@ namespace CSharpAdvanced
         public Constandreadonly(string val)
         {
             //Val = "dfdf";
-            s = "This string" + val;
-            Console.WriteLine($"-------Ctor with Parameter------->{s}");
+            _oldVal = "This string" + val;
+            Console.WriteLine($"-------Ctor with Parameter------->{_oldVal}");
         }
     }
 }
