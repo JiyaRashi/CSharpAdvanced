@@ -120,9 +120,9 @@ namespace CSharpAdvanced
         {
 
             //Constandreadonly cr = new Constandreadonly("Change my String");
-            Constandreadonly cr1 = new Constandreadonly();
-            Constandreadonly cr2 = new Constandreadonly();
-            Constandreadonly cr3 = new Constandreadonly();
+            Constandreadonly cr1 = new Constandreadonly("Passed");
+           // Constandreadonly cr2 = new Constandreadonly();
+            //Constandreadonly cr3 = new Constandreadonly();
             //Static constrctor will be called once no matter how many object has been created
         }
 
@@ -147,17 +147,15 @@ namespace CSharpAdvanced
         
 
        
-        public void EnumerableEnumeratior_1()
+        public void EnumerableEnumeratior()
         {
             EnumerableEnumerator ee = new EnumerableEnumerator();
             ee.IterateCollection_1();
-        }
-
-        public void EnumerableEnumeratior_2()
-        {
-            EnumerableEnumerator ee = new EnumerableEnumerator();
+            ee.IterateCollection_2();
             ee.IterateCollection_3();
         }
+
+       
 
         public void Multi_Thread()
         {
