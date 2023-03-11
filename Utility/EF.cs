@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CSharpAdvanced
 {
-    public class EF_Utility
+    public class EF
     {
         Student addStudent = new Student()
         {
@@ -20,6 +20,7 @@ namespace CSharpAdvanced
         };
         public void GetAllStudents()
         {
+
             
             using(var context= new EF_Demo_DBEntities())
             {

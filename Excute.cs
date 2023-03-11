@@ -1,22 +1,17 @@
-﻿
+﻿using System;
+using System.IO;
 namespace CSharpAdvanced
 {
-    using System;
-    using System.IO;
-
-    class Program
+    class Excute
     {
         static void Main(string[] args)
         {
-            CSharp_Utility _commonUtility = new CSharp_Utility();
-
-            _commonUtility.ExtensionMethods_1();
            // EF_Utility eF_Utility = new EF_Utility();
 
             //_commonUtility.InterfaceAbstract();
-           // _commonUtility.InterfaceAbstract();
+            // _commonUtility.InterfaceAbstract();
 
-           // eF_Utility.UpdatedStudents();
+            // eF_Utility.UpdatedStudents();
             // _commonUtility.InterfaceAbstract();
 
             // _commonUtility.SecondLargest();

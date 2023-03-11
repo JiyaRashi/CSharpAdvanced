@@ -59,7 +59,8 @@
     <Compile Include="Collection\TheoryCollection\ArrayTheroyClass.cs" />
     <Compile Include="Collection\TheoryCollection\TheoryConcepts.cs" />
     <Compile Include="Concepts\StringvsStringBuilder.cs" />
-    <Compile Include="CSharp_Utility.cs" />
+    <Compile Include="Utility\Linq.cs" />
+    <Compile Include="Utility\CSharp.cs" />
     <Compile Include="Concepts\Constandreadonly.cs" />
     <Compile Include="Concepts\DelegateEvents_2.cs" />
     <Compile Include="Concepts\EnumerableEnumerator.cs" />
@@ -79,7 +80,7 @@
     <Compile Include="DesignPattern\Structural\Composite.cs" />
     <Compile Include="DesignPattern\Structural\Decorator.cs" />
     <Compile Include="DesignPattern\Structural\Facade.cs" />
-    <Compile Include="EF_Utility.cs" />
+    <Compile Include="Utility\EF.cs" />
     <Compile Include="Entity-Framework\Course.cs">
       <DependentUpon>EF_Demo_Moel.tt</DependentUpon>
     </Compile>
@@ -117,7 +118,7 @@
       <DependentUpon>EF_Demo_Moel.tt</DependentUpon>
     </Compile>
     <Compile Include="LogicalProgram\SecondLargestNum.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Excute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Concepts\VarDynamicKeyword.cs" />
   </ItemGroup>

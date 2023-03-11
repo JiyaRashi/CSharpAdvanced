@@ -1,19 +1,13 @@
-﻿using CSharpAdvanced.Collection;
-using CSharpAdvanced.Collection.TheoryCollection;
+﻿using CSharpAdvanced.Collection.TheoryCollection;
 using CSharpAdvanced.Concepts;
 using CSharpAdvanced.DesignPattern;
 using CSharpAdvanced.DesignPattern.Behavioural;
 using CSharpAdvanced.DesignPattern.FactoryDesignPattern;
 using CSharpAdvanced.DesignPattern.Structural;
 using CSharpAdvanced.LogicalProgram;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using static CSharpAdvanced.DelegatevsEvents_1;
 using static CSharpAdvanced.InterfacevsAbstract;
+using System;
 
 namespace CSharpAdvanced
 {
@@ -131,17 +125,17 @@ namespace CSharpAdvanced
             //Static constrctor will be called once no matter how many object has been created
         }
 
-        public void ArrayConcepts()
-        {
-            ArrayTheroyClass array = new ArrayTheroyClass();
-            array.ArrayPoint();
-        }
+        //public void ArrayConcepts()
+        //{
+        //    ArrayTheroyClass array = new ArrayTheroyClass();
+        //    array.ArrayPoint();
+        //}
 
-        public void TheoryConcepts()
-        {
-            TheoryConcepts theoryConcepts = new TheoryConcepts();
-            theoryConcepts.ReadTheroy();
-        }
+        //public void TheoryConcepts()
+        //{
+        //    TheoryConcepts theoryConcepts = new TheoryConcepts();
+        //    theoryConcepts.ReadTheroy();
+        //}
 
         public void Liskov()
         {
